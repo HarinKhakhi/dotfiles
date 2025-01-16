@@ -7,7 +7,7 @@ sudo apt install -y zsh
 # install nerd fonts
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.tar.xz
 tar -xvf Meslo.tar.xz
-mv Meslo /usr/share/fonts/
+mv Meslo ~/.local/share/fonts/
 
 # Install oh-my-zsh
 echo "downloading oh-my-zsh..."
