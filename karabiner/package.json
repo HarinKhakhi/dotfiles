@@ -1,0 +1,16 @@
+{
+  "name": "karabiner",
+  "version": "1.0.0",
+  "description": "utility to export json file for karabiner elements",
+  "main": "exporter.ts",
+  "scripts": {
+    "run": "npx tsx exporter.ts"
+  },
+  "author": "Harin Khakhi",
+  "license": "ISC",
+  "dependencies": {
+    "karabiner.ts": "^1.30.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
