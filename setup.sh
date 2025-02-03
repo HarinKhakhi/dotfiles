@@ -38,26 +38,24 @@ echo "downloading batcat..."
 # Install batcat
 wget -c https://github.com/sharkdp/bat/releases/download/v0.25.0/bat-v0.25.0-x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
 chmod +x bat-v0.25.0-x86_64-unknown-linux-gnu/bat
-mv bat-v0.25.0-x86_64-unknown-linux-gnu/bat ~/bin/
+mv bat-v0.25.0-x86_64-unknown-linux-gnu/bat ~/.local/bin/
     
 echo "downloading fd..."
 # Install fd
 wget -c https://github.com/sharkdp/fd/releases/download/v10.2.0/fd-v10.2.0-arm-unknown-linux-gnueabihf.tar.gz -O - | tar xz
 chmod +x fd-v10.2.0-arm-unknown-linux-gnueabihf/fd
-mv fd-v10.2.0-arm-unknown-linux-gnueabihf/fd ~/bin/
+mv fd-v10.2.0-arm-unknown-linux-gnueabihf/fd ~/.local/bin/
 
 echo "downloading eza..."
 # Install eza
 wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
 chmod +x eza
-mv eza ~/bin/
+mv eza ~/.local/bin/
 
-echo "downloading ggh..."
-# Install ggh
-sudo apt install -y ggh
-wget -c https://github.com/byawitz/ggh/releases/download/v0.1.4/ggh_linux_x86_64
-chmod +x ggh_linux_x86_64
-mv ggh_linux_x86_64 ~/bin/
+echo "downloading delta..."
+# Install delta
+wget -c https://github.com/dandavison/delta/releases/download/0.18.2/delta-0.18.2-x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
+chmod +x delta-0.18.2-x86_64-unknown-linux-gnu/delta
+mv delta-0.18.2-x86_64-unknown-linux-gnu/delta ~/.local/bin/
 
-
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
